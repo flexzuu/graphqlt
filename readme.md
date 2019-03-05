@@ -15,10 +15,10 @@ $ go get github.com/flexzuu/graphqlt
 import "context"
 
 // create a client (safe to share across requests)
-client := graphql.NewClient("https://yourserver.example/graphql")
+client := graphqlt.NewClient("https://yourserver.example/graphql")
 
 // make a request
-req := graphql.NewRequest(`
+req := graphqlt.NewRequest(`
     query ($key: String!) {
         items (id:$key) {
             field1
