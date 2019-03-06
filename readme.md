@@ -38,7 +38,11 @@ req.Header.Set("Cache-Control", "no-cache")
 ctx := context.Background()
 
 // run it and capture the response
-var respData ResponseStruct
+var respData struct {
+    Data struct {
+        items []entity.Item
+    }
+}
 if err := client.Run(ctx, req, &respData); err != nil {
     log.Fatal(err)
 }
