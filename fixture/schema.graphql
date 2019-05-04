@@ -1,0 +1,6 @@
+type Project {
+  name: String
+  tagline: String
+  contributors: [User]
+}
+

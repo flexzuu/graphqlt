@@ -1,0 +1,5 @@
+query testQuery {
+  project(name: "GraphQL") {
+    tagline
+  }
+}
